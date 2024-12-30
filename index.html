@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lava Rápido Missionário</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lava Rápido Missionário</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#localizacao">Localização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#missao">Objetivo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container text-center">
+        <h1
+          class="display-4 mb-4"
+          style="color: #ff6b6b; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+        >
+          Lava Rápido Missionário
+        </h1>
+        <p
+          class="lead text-white mb-5"
+          style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)"
+        >
+          Seu carro limpo, nossa missão cumprida!
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#servicos" class="btn btn-danger btn-lg px-4"
+            >Nossos Serviços</a
+          >
+          <a href="#localizacao" class="btn btn-outline-light btn-lg px-4"
+            >Localização</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      class="py-5"
+      id="servicos"
+      style="background-color: #4290f5; color: white"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5">Nossos Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="service-card text-center">
+              <i class="fas fa-car-wash mb-3" style="font-size: 3rem"></i>
+              <h3>Lavagem Completa</h3>
+              <p class="display-6 my-3">R$30,00</p>
+              <p class="mb-3">Serviço completo para seu veículo</p>
+              <a
+                href="https://wa.me/5511989164348?text=Olá! Gostaria de fazer uma reserva para Lavagem Completa."
+                class="btn btn-light"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-whatsapp me-2"></i>Reservar Agora
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-card text-center">
+              <i class="fas fa-soap mb-3" style="font-size: 3rem"></i>
+              <h3>Lavagem Simples</h3>
+              <p class="display-6 my-3">R$15,00</p>
+              <p class="mb-3">Lavagem básica e rápida</p>
+              <a
+                href="https://wa.me/5511989164348?text=Olá! Gostaria de fazer uma reserva para Lavagem Simples."
+                class="btn btn-light"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-whatsapp me-2"></i>Reservar Agora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timer Section -->
+    <section class="timer-section text-center">
+      <div class="container">
+        <h2 class="mb-4">O Evento Começa em:</h2>
+        <div class="d-flex justify-content-center flex-wrap" id="countdown">
+          <div class="timer-box mx-2">
+            <h3 id="days">00</h3>
+            <p class="mb-0">Dias</p>
+          </div>
+          <div class="timer-box mx-2">
+            <h3 id="hours">00</h3>
+            <p class="mb-0">Horas</p>
+          </div>
+          <div class="timer-box mx-2">
+            <h3 id="minutes">00</h3>
+            <p class="mb-0">Minutos</p>
+          </div>
+          <div class="timer-box mx-2">
+            <h3 id="seconds">00</h3>
+            <p class="mb-0">Segundos</p>
+          </div>
+        </div>
+        <p class="mt-4 lead">04/01/2025 - Das 7:00 às 16:00</p>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="localizacao">
+      <div class="container text-center">
+        <h2 class="mb-4 text-white">Localização</h2>
+        <p class="lead text-white">Rua Valencia do Minho, 501</p>
+        <p class="text-white">Igreja ADSM Jardim Brasília (Igreja Azul)</p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section text-center" id="missao">
+      <div class="container">
+        <p class="lead">
+          Todos os valores arrecadados serão destinados ao envio de missionários
+          para a janela 10/40
+        </p>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

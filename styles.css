@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(33, 37, 41, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/IMG-20241230-WA0004.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 8rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.service-card {
+  background-color: #dc3545;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  transition: all 0.3s ease;
+  padding: 12px 20px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.location-section {
+  background-color: #1e4b94;
+  padding: 4rem 0;
+  color: white;
+}
+
+.mission-section {
+  background-color: #dc3545;
+  color: white;
+  padding: 4rem 0;
+}
+
+.timer-section {
+  padding: 3rem 0;
+  background-color: rgba(33, 37, 41, 0.95);
+  color: white;
+}
+
+.timer-box {
+  background-color: #dc3545;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  min-width: 120px;
+}
+
+.timer-box h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+    background-attachment: scroll;
+  }
+
+  .timer-box {
+    min-width: 100px;
+  }
+}
